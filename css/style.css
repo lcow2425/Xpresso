@@ -4,7 +4,7 @@ Student ID : c0932018
 Term Project : Espresso Maker 
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -101,7 +101,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #e44d26; /* Change the color on hover as per your design preference */
+    color: #e44d26;
+    /* Change the color on hover as per your design preference */
 }
 
 
@@ -110,6 +111,10 @@ footer a:hover {
 .customer-guarantee {
     padding: 2em;
     text-align: center;
+}
+
+.product-of-the-week h2 {
+    margin-top: 2em;
 }
 
 .product-of-the-week img,
@@ -122,4 +127,170 @@ footer a:hover {
 
 .customer-guarantee {
     background-color: #f5f5f5;
+}
+
+/* Style for about page */
+/* Header Styles */
+.about-header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+    background: url(../images/about.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-header h1 {
+    margin-bottom: 0.5em;
+}
+
+.about-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Main Content Styles */
+section {
+    background-color: #fff;
+    margin: 0 0 2em 0;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Section Styles */
+.our-story p {
+    margin-bottom: 1em;
+}
+
+/* Reasons to Shop Section Styles */
+/* .reasons-to-shop ol {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons-to-shop li {
+    margin-bottom: 1em;
+} */
+
+/* Reasons to Shop Section Styles */
+.reasons-to-shop {
+    background-color: #fff;
+    margin: 2em 0;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.reasons-list img {
+    max-width: 30%;
+    height: auto;
+    margin: 1em;
+}
+
+.reasons-list p {
+    margin-bottom: 1em;
+}
+
+/* Guarantee Section Styles */
+.our-guarantee p {
+    margin-bottom: 1em;
+}
+
+.our-guarantee strong {
+    font-weight: bold;
+    color: #e44d26;
+    /* Highlight color for strong text */
+}
+
+/* Media Queries for Responsive Design */
+
+/* Mobile Viewport */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        top: 3.8em;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        width: 25%;
+    }
+
+    nav div.logo {
+        text-align: center;
+        margin: auto;
+    }
+
+    nav div.logo a {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav a {
+        padding: 1em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .product-of-the-week h2 {
+        margin-top: 6em;
+    }
+}
+
+/* Tablet Viewport */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        /* Adjust font size for medium-sized screens */
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop Viewport */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        /* Adjust font size for larger screens */
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
 }
